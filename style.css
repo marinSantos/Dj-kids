@@ -1,0 +1,262 @@
+@font-face {
+    font-family: 'titulo';
+    src: url(fontes/Patrician.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+body{
+    text-indent: 20px;
+   background-color: black;
+   
+}
+body::-webkit-scrollbar {
+    width: 10px
+} 
+  
+body::-webkit-scrollbar-thumb {   
+background-color: darkgrey;   
+}
+@keyframes main {
+    from{ opacity: 0;
+    }
+    to{ opacity: 1; 
+    }
+}
+
+header{
+    background: #2e0d44 url(Imagens/bg-header.jpg) no-repeat;
+    background-size: cover;
+    color: white;
+    position: fixed ;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 6px 6px black;
+
+}
+.logo{
+    height: 4em;
+    width: 4em;
+    position: absolute;
+    left: 10%;
+    top: 12%;
+    border-radius: 50%;
+}
+ nav{
+     display: flex;
+     align-items: center;
+    
+ }   
+ nav>a{
+     color: white;
+     font-family: 'titulo';
+     text-decoration: none;
+     font-size: 0.8em;
+ }
+ a:hover{
+     text-decoration: underline;   
+ }
+.capa{
+    width:100% ;
+    height:400px;
+    position: relative;
+}
+.imgcapa{
+    width: 100%;
+    height: 85%;
+    position: absolute;
+    left: 0%;
+    top: 15%;
+}
+
+
+main{
+    background-color: #F5F5F5;
+    max-width: 90%;
+    min-width: 320px;
+    max-height: 95%;
+    margin: auto;
+  
+}
+
+.introduçao{
+    background-color:#2e0d44;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    padding: 20px;
+    width: 100%;
+    right: 1px;
+    position: relative;
+    box-shadow: 0px 6px 6px black;
+}
+.resumo{
+    text-align: center;
+    color: #800080 ;
+    padding: 25px;
+}
+span{
+    padding-top: 15px;
+    display: block;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.781);
+}
+
+.tabela{
+    position: relative;
+    height: 500px;
+    padding-top: 50px;
+    padding-bottom: 16%;
+    
+}
+.tabela>img{
+    height: 70%;
+    width: 60%;
+    position: absolute;
+    left: 19%;
+    top: 35%;
+    margin: auto;
+    border: solid black;
+    border-radius: 5px;
+}
+.tabela>img:hover{
+    cursor:pointer; 
+    cursor: hand;
+    height: 90%;
+    width: 80%;
+    position: absolute;
+    left: 10%;
+    top: 15%;
+}
+ol>p>li>a{
+    text-decoration: none;
+    color: black;
+}
+.regras{
+    height: auto;
+    width: 100%;
+    position: relative;
+    padding: 40px;
+    background-color: #885FA8;
+    box-shadow: 0px 6px 6px black;
+    
+}
+div>ol>li:hover{
+    font-size: 1.2em;
+    cursor:pointer; 
+    cursor: hand;
+}
+
+header>a>img{
+    animation: backInDown;
+    animation-duration: 1s;
+}
+ol>li{
+    padding: 20px;
+    font-size: 1em;  
+    list-style-position: inside;
+}
+h1{
+    font-family: 'titulo';
+    font-size: xx-large;
+    text-align: center;
+    text-shadow: 0 0 8px rgb(0 0 0 / 15%);
+    animation: zoomInDown ;
+    animation-duration: 2s;
+    
+}
+
+h2{
+    font-family: 'titulo';
+    font-size: xx-large;
+    color: #800080;
+    text-align: center;
+    text-shadow: 0 0 8px rgb(0 0 0 / 15%);
+}
+
+h3{
+    font-family: 'titulo';
+    color: #800080;
+    text-shadow: 0 0 8px rgb(0 0 0 / 15%);
+    display: inline-block;
+}
+.video{
+    background-color: #885FA8 ;
+    position: relative;
+    padding-bottom: 20%;
+    height: 250px;
+      box-shadow: 0px 6px 6px black;
+}
+div>iframe{
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+
+article>li{
+    padding: 25px;
+    font-family: 'titulo' ;
+    list-style-type:none ;
+}
+audio{
+    background-color: #2e0d44;
+    border: solid #2e0d44;
+    position: relative;
+    border-radius: 6px;
+}
+
+.semit{
+     color: #800080;
+     padding: 20px;
+}
+.vazio{
+    height: 200px;
+    color: white;   
+}
+.sociais{
+    height: auto;
+    padding: 30px;
+    width: 100%;
+    background-color: #341541;
+    color: white;
+}
+footer{
+    background-color: #2e0d44;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.692);
+    height: 30px;
+    flex-shrink: 0;
+    padding: 20px;
+}
+footer>a{
+    color: rgb(255, 255, 255);
+}
+aside>p{
+    padding: 10px;
+}
+aside>p>img{
+      width: 1em;
+    height: 1em;
+}
+aside>p>a{
+    color: white;
+}
+strong{
+    font-family: 'titulo';
+    font-size: 0.8em;
+}
+#horns{
+    width: 1.2em;
+    height: 1.2em;
+}
