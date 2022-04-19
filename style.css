@@ -8,9 +8,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-img{
-    width: 100%;
-}
+
 body{
     text-indent: 20px;
    background-color: black;
@@ -37,7 +35,7 @@ header{
     position: fixed ;
     width: 100%;
     height: 80px;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     justify-content: space-around;
     box-shadow: 0px 6px 6px black;
@@ -129,13 +127,16 @@ span{
     border-radius: 5px;
 }
 .tabela>img:hover{
-    cursor:pointer; 
-    cursor: hand;
-    height: 90%;
-    width: 80%;
-    position: absolute;
-    left: 10%;
-    top: 15%;
+    cursor: pointer;
+}
+.tabela>img:active
+{
+    width: 90%;
+    height: 94%;
+    z-index:1;
+    top: 47%;
+    left:5%;
+    bottom: 20%;
 }
 ol>p>li>a{
     text-decoration: none;
@@ -147,13 +148,13 @@ ol>p>li>a{
     position: relative;
     padding: 40px;
     background-color: #885FA8;
-    box-shadow: 0px 6px 6px black;
+    list-style-position: inside;
+    columns: 2;
     
 }
 div>ol>li:hover{
     font-size: 1.2em;
     cursor:pointer; 
-    cursor: hand;
 }
 
 header>a>img{
@@ -189,21 +190,6 @@ h3{
     text-shadow: 0 0 8px rgb(0 0 0 / 15%);
     display: inline-block;
 }
-.video{
-    background-color: #885FA8 ;
-    position: relative;
-    padding-bottom: 20%;
-    height: 250px;
-      box-shadow: 0px 6px 6px black;
-}
-div>iframe{
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
-    position: absolute;
-}
-
 article>li{
     padding: 25px;
     font-family: 'titulo' ;
@@ -212,7 +198,6 @@ article>li{
 audio{
     background-color: #2e0d44;
     border: solid #2e0d44;
-    position: relative;
     border-radius: 6px;
 }
 
@@ -256,7 +241,16 @@ strong{
     font-family: 'titulo';
     font-size: 0.8em;
 }
-#horns{
-    width: 1.2em;
-    height: 1.2em;
+.Mpadrao{
+   display: flex;
+   gap: 10px;
+   flex-wrap: wrap;
+  padding: 0 40px 0 80px;
+}
+.Mpadrao h4{
+ color: #800080;
+
+}
+.Mpadrao div{
+    flex:1 1 50px;  
 }
