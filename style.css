@@ -8,9 +8,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-img{
-    width: auto;
-}
 body{
     text-indent: 20px;
    background-color: black;
@@ -54,7 +51,7 @@ header{
  nav{
      display: flex;
      align-items: center;
-    
+     flex-wrap: wrap;
  }   
  nav>a{
      color: white;
@@ -113,32 +110,25 @@ span{
 
 .tabela{
     position: relative;
-    height: 500px;
+    height: 650px;
     padding-top: 50px;
     padding-bottom: 16%;
     
 }
-.tabela>img{
-    height: 70%;
-    width: 60%;
-    position: absolute;
-    left: 19%;
-    top: 35%;
-    margin: auto;
+.container{
+    display: flex;
+    justify-content: center;
+}
+.tabela img{
+    height: 400px;
+    max-width: 100%;
+    min-width: 10%;
     border: solid black;
     border-radius: 5px;
+   
 }
-.tabela>img:hover{
+.tabela img:hover{
     cursor: pointer;
-}
-.tabela>img:active
-{
-    width: 90%;
-    height: 94%;
-    z-index:1;
-    top: 47%;
-    left:5%;
-    bottom: 20%;
 }
 ol>p>li>a{
     text-decoration: none;
@@ -247,7 +237,8 @@ strong{
    display: flex;
    gap: 10px;
    flex-wrap: wrap;
-  padding: 0 40px 0 80px;
+  padding: 0 0 0 15px;
+  margin: auto;
 }
 .Mpadrao h4{
  color: #800080;
