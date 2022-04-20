@@ -8,7 +8,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+img{
+    width: auto;
+}
 body{
     text-indent: 20px;
    background-color: black;
