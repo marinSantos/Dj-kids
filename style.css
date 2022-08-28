@@ -497,6 +497,10 @@ footer {
         display: none;
     }
 
+    header { 
+        max-width:80%;
+    }
+
 }
 
 @media(max-width:578px) {
