@@ -12,7 +12,7 @@ const mobile = document.getElementById('mobile')
 
 function mobileMenu(){
   header.classList.toggle('active')
-  main.classList.toggle('gry')
+  body.classList.toggle('gry')
 }
 
 mobile.addEventListener('click', mobileMenu)
