@@ -43,8 +43,8 @@ header {
     display: flex;
     flex-direction: column;
     row-gap: 7px;
-    top: 60px;
-    left: 80%;
+    top: 50px;
+    left: 86%;
     background-color: #5E1C5E;
     position: absolute;
     justify-content: center;
@@ -59,7 +59,6 @@ header {
     visibility: hidden;
     overflow: hidden;
 }
-
 #nav.open #detalhes {
     visibility: visible;
     height: 280px;
@@ -149,9 +148,13 @@ button {
 }
 
 nav {
-    display: flex;
+       display: flex;
     align-items: center;
     column-gap: 30px;
+    position: absolute;
+    left: 44%;
+    FONT-WEIGHT: 200;
+    bottom: 39%;
 }
 
 nav>a {
