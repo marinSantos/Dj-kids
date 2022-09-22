@@ -192,7 +192,7 @@ button {
     max-height: 100%;
 }
 
-/* Conteúdo princiapal */
+/* Conteúdo princapal */
 .capa {
 
     width: 100%;
@@ -357,6 +357,7 @@ iframe {
     padding-top: 60px;
     padding-left: 60px;
     border-top: solid #2e0d44;
+background-color: white;
 
 }
 
@@ -374,7 +375,7 @@ iframe {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
-
+padding-bottom: 20px;
 }
 
 .sociais a {
