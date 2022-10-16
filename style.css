@@ -295,7 +295,7 @@ table {
     justify-content: space-evenly;
     text-align: center;
     margin-bottom: 260px;
-
+    padding-top: 30px;
 }
 
 .audios {
