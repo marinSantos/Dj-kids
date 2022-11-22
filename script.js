@@ -1,4 +1,4 @@
-alert('Olá, aqui é o Lucas ! Desenvolvedor deste guia...\n\nPeço para que se ouve alguma mudança das regras, músicas, falas e demais informações disponibilizdas no guia, por favor me informe no número de whatsapp "976047647" \nPor mais que eu não esteja mais trabalhando aí, estarei a disposição, obrigado !\n\n\n obs: Esta mensagem vai permanecer por uma semana... ')
+alert('Olá, aqui é o Lucas ! Desenvolvedor deste guia...\n\nPeço para que por gentileza se ouve alguma mudança das regras, músicas, falas e demais informações disponíveis aqui, me manter informado no meu whatsapp "11976047647" \nPor mais que eu não esteja presente estarei a disposição, obrigado !\n\n\n obs: Esta mensagem vai permanecer por uma semana... ')
 
 const miniMenu = document.getElementById('miniMenu')
 
