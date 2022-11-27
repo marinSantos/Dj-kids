@@ -15,17 +15,23 @@ body {
     background-color: black;
 }
 
-.paddng{
- padding: 60px 20px;
+.paddng {
+    padding: 60px 20px;
 }
 
 .rouxo {
     color: #800080;
 }
-h1,h2,h3,h4,strong{
+
+h1,
+h2,
+h3,
+h4,
+strong {
     color: #800080;
     font-family: 'Epílogo', sans-serif;
 }
+
 h1 {
     color: #5E1C5E;
 }
@@ -35,13 +41,13 @@ h2 {
     padding-bottom: 30px;
 }
 
-h4{
+h4 {
     padding-bottom: 20px;
 }
 
 strong {
     color: #800080;
-    
+
 }
 
 /* Cabeçalho */
@@ -207,8 +213,8 @@ button {
     width: 100%;
     height: 100%;
     border: #800080 solid;
-    border-bottom-left-radius:  30px;
-    border-bottom-right-radius: 30px ;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
 main {
@@ -218,8 +224,8 @@ main {
     min-width: 320px;
     padding: 40px 0 40px 0;
     border: #800080 solid;
-    
-    
+
+
 }
 
 .intro {
@@ -279,7 +285,6 @@ main {
 .tabela {
     display: flex;
     column-gap: 20px;
-    padding: 60px 35px 60px 0px;
     width: 100%;
     border-bottom: solid #2e0d44;
 }
@@ -293,22 +298,23 @@ main {
 }
 
 table {
-    font-size: 1.3em;
-    color: black;
-    border-color: black;
-    border-style: ridge;
-    padding: 20px;
     border: solid #800080 3px;
     border-radius: 30px;
+    padding: 20px 10px;
 }
-td{
-    padding-left: 49px;
+
+td {
+    padding-left: 12%;
+    font-size: 100%;
 }
-th{
+
+th {
     padding-bottom: 10px;
-    font-size: 1.4em;
+    font-size: 131%;
     color: #800080;
+    padding: 0 10px 10px 10px;
 }
+
 .musicas {
     display: flex;
     justify-content: space-evenly;
@@ -346,7 +352,7 @@ audio {
     border-radius: 30px;
     border: #800080 solid 4px;
     width: 200px;
-    
+
 }
 
 iframe {
@@ -358,7 +364,7 @@ iframe {
 
 .falas {
     border-top: solid #2e0d44;
-   
+
 }
 
 .falas h3 {
@@ -380,10 +386,10 @@ iframe {
     padding-top: 60px;
     padding-left: 60px;
     border-top: solid #2e0d44;
-background-color: white;
-border-top-left-radius:  50px;
-border-bottom-right-radius: 50px ;
-border: #800080 solid;
+    background-color: white;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border: #800080 solid;
 }
 
 .despedida {
@@ -594,8 +600,6 @@ footer a {
         display: flex;
         flex-direction: column;
         row-gap: 40px;
-        padding-top: 60px;
-        padding-bottom: 60px;
         border-bottom: solid #2e0d44;
     }
 
@@ -606,14 +610,6 @@ footer a {
         padding-left: 10%;
         font-size: 1em;
     }
-
-    table {
-        width: 95%;
-        font-size: 1.3em;
-        color: black;
-        border-style: none;
-    }
-
 
 
     .musicas {
@@ -699,12 +695,16 @@ footer a {
     }
 }
 
-@media screen and (min-width:321px) and (max-width:420px) {
+@media screen and (min-width:321px) and (max-width:432px) {
 
     /* Conteúdo principal */
     .intro {
         left: 5%;
         width: 84%;
+    }
+
+    main {
+        width: 100%;
     }
 
     .introTabela {
@@ -731,6 +731,19 @@ footer a {
         padding-top: 210px;
     }
 
+    table {
+        border: solid #800080 3px;
+        border-radius: 30px;
+    }
+
+    td {
+
+        font-size: 62%;
+    }
+
+    th {
+        font-size: 90%;
+    }
 }
 
 @media screen and (max-width:320px) {
@@ -821,9 +834,13 @@ footer a {
         width: 279px;
     }
 
-    table {
-        width: 97%;
-        font-size: 17px;
+    td {
+
+        font-size: 62%;
+    }
+
+    th {
+        font-size: 90%;
     }
 
 }
