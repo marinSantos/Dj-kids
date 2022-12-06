@@ -1,5 +1,3 @@
-alert('Olá, aqui é o Lucas ! Desenvolvedor deste guia...\n\nPeço para que por gentileza, se ouver alguma mudança das regras, músicas, falas ou demais informações disponíveis aqui, me manter informado no meu whatsapp "11976047647" \nPor mais que eu não esteja presente estarei a disposição, obrigado !\n\n\n obs: Esta mensagem vai permanecer por uma semana... ')
-
 const miniMenu = document.getElementById('miniMenu')
 
 function verticalMenu(){
