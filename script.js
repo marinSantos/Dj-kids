@@ -1,3 +1,4 @@
+alert('Feliz natal e boas festas! 🎅✨')
 //Deixa a cor de fundo do header transparente
 window.onscroll = function() {transparent()}
 
@@ -25,7 +26,16 @@ document.getElementById('menu').addEventListener('mouseover',visible)
 document.getElementById('menu').addEventListener('mouseout',noVisible)
 
 
-
+function miniMenuOn(){
+  const body = document.getElementById('body')
+  if(body.className == 'bodyOn' ){
+    body.className = 'bodyOf'
+  }else{
+    body.className = 'bodyOn'
+  }
+  
+ 
+}
 
 
 
