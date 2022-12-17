@@ -38,9 +38,3 @@ function miniMenuOn(){
 }
 
 
-
-
-
-
-
-
