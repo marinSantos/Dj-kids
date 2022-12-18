@@ -26,15 +26,13 @@ document.getElementById('menu').addEventListener('mouseover',visible)
 document.getElementById('menu').addEventListener('mouseout',noVisible)
 
 
+//Menu mobile
+
 function miniMenuOn(){
-  const body = document.getElementById('body')
-  if(body.className == 'bodyOn' ){
-    body.className = 'bodyOf'
-  }else{
-    body.className = 'bodyOn'
-  }
-  
+  const mobile = document.getElementById('navMobile')
  
+  mobile.classList.toggle('active')
+  
 }
 
 
