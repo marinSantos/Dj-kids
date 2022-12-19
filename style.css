@@ -282,8 +282,8 @@ th {
 .audios {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
-    padding-left: 10%;
+    row-gap: 50px; 
+    padding-left: 5%;
     margin-top: 50px;
     flex-wrap: nowrap;
 }
@@ -291,7 +291,7 @@ th {
 audio {
     border-radius: 20px;
     border: rgb(128, 0, 128) solid 2px;
-    width: 300px;
+    width: 280px;
 
 }
 
@@ -764,7 +764,13 @@ footer a {
     audio {
         max-width: 80%;
     }
-
+    
+    iframe {
+        height: 300px;
+        width: 100%;
+        border-radius: 0px;
+        border: none;
+    }
     /* Tabela */
 
     td {
