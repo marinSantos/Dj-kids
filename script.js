@@ -1,4 +1,3 @@
-alert('Feliz 2023! ✨')
 //Deixa a cor de fundo do header transparente
 window.onscroll = function() {transparent()}
 
