@@ -365,36 +365,13 @@ p {
 
 .sociais {
     display: flex;
-    flex-direction: column;
-    row-gap: 10px;
-    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
     font-family: 'Open Sans', sans-serif;
 }
 
 
-.insta {
-    width: 20px;
-    display: flex;
-    column-gap: 10px;
-    align-items: center;
-}
 
-.insta img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.face {
-    width: 20px;
-    display: flex;
-    column-gap: 10px;
-    align-items: center;
-}
-
-.face img {
-    max-width: 100%;
-    max-height: 100%;
-}
 
 /* Rodapé */
 footer {
