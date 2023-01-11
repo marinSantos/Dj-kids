@@ -1,293 +1,831 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+@charset "UTF-8";
+/* Configurações gerais */
+i {
+  font-size: 20px;
+}
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia Freelancers - Engenheiro </title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Imagens/favicon.ico" type="image/x-icon">
-    <script src="script.js" defer></script>
+i span {
+  font-size: 50px;
+}
 
-</head>
+.avisos {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0px;
+}
 
-<body id="body">
+.inputs {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
 
-    <div id="geral">
+.divInputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-        <header id="header">
-            <div id="navMobile">
-                <li><a href="#P">PAGAMENTOS</a> </li>
-                <li><a href="#geral">FUNÇÕES +</a></li>
-                <ul>
-                    <li>DJ</li>
-                    <li>RECEPCIONISTA</li>
-                    <li>SEGURANÇA</li>
-                    <li>LIMPEZA</li>
-                    <li>MONITOR</li>
-                    <li>OPERACIONAL</li>
-                    <li>BAR</li>
-                    <li>COPA</li>
-                    <li>MESA</li>
-                    <li>GARÇOM</li>
-                    <li>AUXILIAR</li>
-                    <li>FRITADEIRA</li>
-                    <li>COZINHEIRA CHEF</li>
-                    <li>GERENTE</li>
-                </ul>
-                <li><a href="#R">REGRAS</a></li>
-                <li><a href="#DJ">MUSICAS</a></li>
-                <li><a href="#F">FALAS</a></li>
-            </div>
-            <div id="burguer" onclick="miniMenuOn()"><img src="Imagens/icon-menu.svg" alt=""></div>
+#linkYoutube {
+  height: 45px;
+  border: solid 2px #72128d;
+  border-right: none !important;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-size: 17px;
+  padding-left: 10px;
+}
 
-            <div class="logo"><img src="Imagens/logo-pk.png" alt=""></div>
+#enviar {
+  width: 60px;
+  height: 45px;
+  border: solid 2px #72128d;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-            <nav id="nav">
-                <p><a href="#P">PAGAMENTOS</a> </p>
-                <p id="menu"><a href="#geral">FUNÇÕES +</a></p>
-                <p><a href="#R">REGRAS</a></p>
-                <p><a href="#DJ">MUSICAS</a></p>
-                <p><a href="#F">FALAS</a></p>
-            </nav>
-            <div id="menuEscondido">
-                <li>DJ</li>
-                <li>RECEPCIONISTA</li>
-                <li>SEGURANÇA</li>
-                <li>LIMPEZA</li>
-                <li>MONITOR</li>
-                <li>OPERACIONAL</li>
-                <li>BAR</li>
-                <li>COPA</li>
-                <li>MESA</li>
-                <li>GARÇOM</li>
-                <li>AUXILIAR</li>
-                <li>FRITADEIRA</li>
-                <li>COZINHEIRA CHEF</li>
-                <li>GERENTE</li>
-            </div>
+#enviar:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
 
-        </header>
-        <div class="cinza">
-            <div class="capa"><img src="Imagens/engenheiro.jpg" alt=""></div>
-            <main>
-                <div class="intro ">
-                    <h1>Bem vindo freelanceer ! &#x1F44B</h1>
-                    <p>A o guia para freelancers do
-                        <strong>planeta
-                            kids - unidade engenheiro</strong>
-                    </p>
-                </div>
-                <div id="R" class="regras padding">
-                    <div class="regrasIntro rouxo">
-                        <h2>Regras &#x1F9D0</h2>
-                    </div>
-                    <ol>
-                        <li>Cabelo sempre preso / bem penteado </li>
-                        <li>Unhas aparadas e cozinha sem esmalte </li>
-                        <li>Perfumes leves</li>
-                        <li>Maquiagens leve </li>
-                        <li>Evitar brincos longos, correntes e pulseiras.</li>
-                        <li>Cozinha camiseta branca e o restante camiseta preta (para evitar de não ter uniforme na
-                            unidade)
-                        </li>
-                        <li>Calça PRETA (não será permitido leggings)</li>
-                        <li>Sapato fechado e de preferência preto/escuro</li>
-                        <li>Garçons, segurança e recepção SEMPRE SOCIAL PRETO /Recepção deve levar salto (podendo ficar
-                            de
-                            calçado baixo atrás do balcão)</li>
-                        <li> Não é permitido o uso de fone, boné, regata, bermudas, shorts, sandálias e chinelos
-                        </li>
-                        <li> O consumo de refrigerante da unidade é proibido</li>
-                        <li> Consumo de qualquer alimento durante a festa é proibido.</li>
-                        <li> O uso do celular é restrito! </li>
-                        <li> Suco e água são liberados</li>
-                        <li> Marmita esta liberada</li>
-                        <li> Antes de ir embora vc deve entregar o uniforme caso use e assinar a lista de presença.
-                        </li>
-                        <li>Recomendo sempre anotar os dias, horários e função trabalhada. Assim vc já sabe quanto deve
-                            receber
-                        </li>
-                        <li id="P">Recomendo sempre anotar os dias, horários e função trabalhada. Assim vc já sabe
-                            quanto
-                            deve receber
-                            ao fim de cada quinzena .</li>
-                    </ol>
-                </div>
-                
-                <div class="tabela padding ">
-                    <h2>Pagamentos &#x1F4B8</h2>
-                    <table class="padding">
-                        <tbody>
-                            <tr>
-                                <th>Função</th>
-                                <th>Segunda a Sexta</th>
-                                <th>Final de semana</th>
-                            </tr>
-                            <tr>
-                                <td>Recepção</td>
-                                <td>R$ 30.00</td>
-                                <td>R$ 35.00</td>
-                            </tr>
-                            <tr>
-                                <td>Segurança</td>
-                                <td>R$ 35.00</td>
-                                <td>R$ 40.00</td>
-                            </tr>
-                            <tr>
-                                <td>Cozinheira Chef</td>
-                                <td>R$ 50.00</td>
-                                <td>R$ 55.00</td>
-                            </tr>
-                            <tr>
-                                <td>Fritadeira Auxiliar</td>
-                                <td>R$ 40.00</td>
-                                <td>R$ 45.00</td>
-                            </tr>
-                            <tr>
-                                <td>Monitor</td>
-                                <td>R$ 30.00</td>
-                                <td>R$ 35.00</td>
-                            </tr>
-                            <tr>
-                                <td>Operacional</td>
-                                <td>R$ 35.00</td>
-                                <td>R$ 40.00</td>
-                            </tr>
-                            <tr>
-                                <td>Garçom</td>
-                                <td>R$ 45.00</td>
-                                <td>R$ 50.00</td>
-                            </tr>
-                            <tr>
-                                <td>Mesa/Bar/Copa</td>
-                                <td>R$ 35.00</td>
-                                <td>R$ 40.00</td>
-                            </tr>
-                            <tr>
-                                <td>Limpeza</td>
-                                <td>R$ 35.00</td>
-                                <td>R$ 40.00</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="funçoes">
+#enviar::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
 
-                    <div class="dj " id="DJ">
+#enviar-white::after {
+  background-color: #fff;
+}
 
-                        <h2 class="branco">Músicas &#x1F3B5</h2>
-                        <br>
-                        <br>
-<!--<a id="original" href="">Ver no youtube</a>-->
-<div class="avisos"><i><span>!</span> Passe o mouse por cima dos itens para obter  instruções <span>!</span></i></div>
+#enviar:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
 
- <div class="inputs"> <h4 title="Copie e cole ao lado o CÓDIGO do link no youtube localizado após o 'watch?v=' do link ">https://www.youtube.com/watch?v=</h4> <div class="divInputs"> <input  value="mtMMHdERW7g" title="Exemplo" type="text" id="linkYoutube"><input  type="submit" id="enviar" title="Rodar vídeo"></div></div>
- 
-                        <div class="musicas">
-                            <br><br>
-                            <h4>Top músicas  internacionais atuais /    Música de entrada do aniversariante</h4> 
-                            
-                                <div class="iframes"><iframe
-                                    src="https://maistocadas.mus.br/musicas-internacionais/" frameborder="0"></iframe><iframe id="youtube" width="420" height="315"
-                                    src="">
-                                    </iframe></div>
-                        </div>
-                        <div class="container" title="Ative esta opção para evitar com que as músicas rodem ao mesmo tempo.">
-                            <h4>Modo Alternado</h4>
-                            <div id="autoPause"  >
-                                <div id="cheeck" class="checkDesactive">
-                                    <div id="bola" class="bolaDesactive"></div>
-                                </div>                         
-                            </div>
-                        </div>
-                        
-                      
-                        <div class="audios">
+#enviar-animated {
+  -webkit-animation: moveInBottom 5s ease-out;
+          animation: moveInBottom 5s ease-out;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+}
 
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
 
-                            <div class="musica rouxo">
-                                <h4>BomBomPow - Black Eyed Peas</h4><img src="Imagens/bombom.pow.jpg"  alt=""><audio id="a1" src="audios/BomBompow.mpeg" controls></audio>
-                            </div>
-                            <div class="musica rouxo">
-                                <h4>Optdown Funk - Bruno Mars</h4><img  src="Imagens/uptown_funk_vs_estudio.jpg" alt=""><audio id="a2" src="audios/BrunoMars.mpeg"
-                                    controls></audio>
-                            </div>
-                            <div class="musica rouxo">
-                                <h4>Planeta gira</h4><img  src="Imagens/planeta.jpg" alt=""><audio id="a3" src="audios/aúdios_Planeta.mp3" controls></audio>
-                            </div>
-                            <div class="musica rouxo">
-                                <h4>Parabéns remix</h4><img  src="Imagens/parabensRemix.jpg" alt=""><audio id="a4" src="audios/aúdios_Parabéns.mp3" controls></audio>
-                            </div>
-                            <div class="musica rouxo">
-                                <h4>Happy - Perry Williams</h4><img  src="Imagens/PharrellWilliamsHappy.jpg" alt=""><audio id="a5" src="audios/Happy.mpeg" controls></audio>
-                            </div>
-                            <div class="musica rouxo">
-                                <h4>Contagem 10s com voz</h4><img  src="Imagens/contagem.jpg" alt=""><audio id="a6" src="audios/aúdios_Contagem.mp3"
-                                    controls></audio>
-                            </div>
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.container {
+  margin: 100px 0 0 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
 
+#autoPause {
+  width: 55px;
+  height: 30px;
+}
 
-                        </div>
+.bolaActive {
+  transform: translateX(100%);
+  background-color: #f1f3f4 !important;
+}
 
+.bolaDesactive {
+  transform: translateX(0%);
+  background-color: rgba(241, 243, 244, 0.5137254902) !important;
+}
 
-                    </div>
-                    <div id="F" class="falas padding">
+.checkActive {
+  background-color: rgb(128, 0, 128) !important;
+}
 
-                        <h3>Falas &#x1F3A4</h3>
+.checkDesactive {
+  background-color: rgba(128, 0, 128, 0.527) !important;
+}
 
-                        <ul>
-                            <li>
-                                <h4>Lanchinho</h4>- E é isso aí pessoal, sejam todos bem-vindos ao aniversário da
-                                (aniversariante). Gostaria de avisar que nosso lanchinho já está sendo servido em
-                                frente
-                                a nossa mesa decorada. Tenham um bom apetite e uma ótima festa!!
-                            </li>
-                            <li>
-                                <h4>Personagens</h4>- Peço para que todas as crianças fiquem próximas a mesa
-                                decorada
-                                para recebermos um convidado especial!!
-                            </li>
-                            <li>
-                                <h4>Entrada</h4>Entrada
-                                - E é isso aí pessoal chegou o momento mais esperado da festa, vamos receber com
-                                muitos
-                                aplausos e muito carinho, nosso aniversariante de hoje e com vocês (aniversariante
-                                )…
-                            </li>
-                            <li>
-                                <h4>Parabéns</h4>Parabéns
-                                - E vamos lá pessoal no três …
-                                - Para (aniversariante) nada …
-                                - Então como é que é…
-                            </li>
-                            <li>
-                                <h4>Parabéns remix</h4><strong>-0.23:</strong>Como é que é!. . . é 1. .é 2. . é 1 é
-                                2 é 3!
-                                <strong>-0.42:</strong> Parou...Voltou!
-                                <strong>-0.57:</strong>Esquerda...Direita..Para frente vaaii...
-                            </li>
-                        </ul>
-                    </div>
+#cheeck {
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  cursor: pointer;
+}
 
-                </div>
-        </div>
-    </div>
+#bola {
+  width: 50%;
+  height: 100%;
+  border-radius: 50px;
+  transition: all 0.5s;
+}
 
-    <div class="contato">
-        <div class="despedida ">
-            <p>Deseja me dar feedbacks ou sugestões ? <br>entre em contado em minhas redes sociais :</p>
-            <br>
-        </div>
-        <div class="sociais">
-            <a href="https://marinsantos.github.io/Redes_Sociais/">marinsantos.io/Redes_Sociais/</a>
-        </div>
-    </div>
-    </main>
-    <footer>SP, são paulo <a href="#">2022</a> </footer>
-    </div>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-</body>
+body {
+  font-family: "Lato", sans-serif;
+}
 
-</html>
+.padding {
+  padding: 40px;
+}
+
+p,
+li {
+  line-height: 30px;
+}
+
+.paddng {
+  padding: 60px 30px;
+}
+
+.branco {
+  color: white !important;
+}
+
+h2,
+h3,
+h4,
+strong {
+  color: rgb(128, 0, 128) !important;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+:root {
+  --header: rgb(46, 13, 68);
+  --fonte1: rgb(128, 0, 128);
+  --fundo1: rgb(245, 245, 245);
+  --fonte2: rgb(255, 255, 255);
+  --fundo2: rgb(136, 95, 168);
+  --destaque: rgb(52, 21, 65);
+}
+
+/* Cabeçalho */
+header {
+  background: #2e0d44;
+  position: fixed;
+  width: 100%;
+  height: 16%;
+  z-index: 100;
+  display: flex;
+  -moz-column-gap: 20%;
+       column-gap: 20%;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  padding: 0 19% 0 10%;
+}
+
+.transparent {
+  background: rgba(46, 13, 68, 0.9019607843);
+}
+
+#navMobile {
+  display: none;
+}
+
+#burguer {
+  display: none;
+}
+
+.logo {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+.logo img {
+  max-width: 60px;
+  max-height: 60px;
+}
+
+nav {
+  display: flex;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+
+nav p {
+  color: white;
+  font-weight: 300;
+  padding: 48px 0;
+}
+
+nav a {
+  border-bottom: solid transparent;
+  color: white;
+  text-decoration: none;
+}
+
+nav p:hover a {
+  border-bottom: solid white 1px;
+}
+
+nav p:hover {
+  cursor: pointer;
+}
+
+.underline {
+  border-bottom: solid 1px white;
+  transition-duration: 0.7s;
+}
+
+#menuEscondido {
+  z-index: 100;
+  position: fixed;
+  background-color: rgba(128, 0, 128, 0.55);
+  list-style-type: none;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  top: 16%;
+  left: 25%;
+  width: 500px;
+  font-weight: 600;
+  grid-template-columns: 1fr 1fr;
+  display: none;
+}
+
+#menuEscondido li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+#menuEscondido li:hover {
+  background-color: rgb(128, 0, 128);
+}
+
+/* Capa e introdução */
+.capa {
+  width: 100%;
+  height: 600px;
+}
+
+.capa img {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  background-color: white;
+  width: 100%;
+}
+
+.intro {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: rgb(52, 21, 65);
+  height: 200px;
+  padding: 20px;
+}
+
+.intro p,
+strong,
+h1 {
+  color: white !important;
+}
+
+.intro p {
+  padding: 15px 40px;
+  font-size: 33px;
+  font-weight: 300;
+}
+
+/* Regras */
+.regras {
+  padding: 50px 10px 50px 10px;
+}
+
+.regras ol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 15%;
+}
+
+.regras li {
+  width: 340px;
+  padding-top: 30px;
+  font-size: 18px;
+  list-style: decimal;
+}
+
+.regras h2 {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Tabela */
+.tabela {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+}
+
+.introTabela {
+  width: 100%;
+  text-align: center;
+}
+
+table {
+  border-radius: 30px;
+  padding: 10px 10px;
+  margin: 50px 0;
+  border: solid rgb(128, 0, 128);
+}
+
+td {
+  padding-left: 12%;
+  font-size: 130%;
+}
+
+th {
+  font-size: 131%;
+  color: rgb(128, 0, 128);
+  padding: 0 10px 10px 10px;
+}
+
+/* Auxilio ao Dj */
+#DJ h2 {
+  background-color: #341541;
+  margin: 0 0 40px 0;
+  color: white;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.musicas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.musica img {
+  width: 330px;
+  height: 278px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 10px;
+  border-bottom: none !important;
+  border: rgb(128, 0, 128) solid 2px;
+}
+
+.musica {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.audios {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+}
+
+audio {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: rgb(128, 0, 128) solid 2px;
+  border-top: none !important;
+  width: 330px;
+  background-color: white;
+}
+
+iframe {
+  height: 300px;
+  width: 470px;
+  border-radius: 20px;
+  border: rgb(128, 0, 128) solid 3px;
+}
+
+.falas {
+  background-color: rgb(245, 245, 245);
+  margin-top: 150px;
+  gap: 20px;
+  padding: 50px 10px 50px 10px;
+}
+
+.falas h3 {
+  text-align: center;
+  padding-bottom: 70px;
+}
+
+.falas ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 90px;
+  gap: 70px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.falas li {
+  list-style: none;
+}
+
+.falas strong {
+  color: rgb(128, 0, 128) !important;
+}
+
+.falas h4 {
+  padding: 10px;
+}
+
+.contato {
+  padding: 5% 7%;
+  font-size: 20px;
+  background-color: #341541;
+}
+
+.contato a,
+p {
+  color: white;
+}
+
+.despedida {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+.sociais {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Rodapé */
+footer {
+  background-color: #2e0d44;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.692);
+  padding: 10px;
+  width: 100%;
+  height: 10%;
+  z-index: 2;
+  font-family: "Open Sans", sans-serif;
+}
+
+footer a {
+  color: white;
+}
+
+@media screen and (max-width: 912px) {
+  /* Configurações gerais */
+  h2 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  #body.cinza #cinza {
+    filter: grayscale(1);
+  }
+  #body.cinza .capa {
+    filter: grayscale(1);
+  }
+  /* Cabeçalho */
+  header {
+    padding: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
+  }
+  #navMobile.active {
+    width: 220px;
+    overflow-y: scroll;
+    left: 0px;
+  }
+  #navMobile {
+    background-color: #72128d;
+    position: relative;
+    top: 200%;
+    left: -32px;
+    height: 100vh;
+    width: 0px;
+    display: block;
+    padding: 100px 7px 7px 25px;
+    overflow-y: hidden;
+    transition: 0.7s;
+  }
+  #navMobile ul {
+    padding-left: 15px;
+  }
+  #navMobile a {
+    text-decoration: none;
+    color: white;
+  }
+  #navMobile li {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    cursor: pointer;
+    list-style: none;
+    color: white;
+    border-bottom: solid white 1px;
+  }
+  #burguer {
+    display: block;
+    border: solid white 1px;
+    cursor: pointer;
+    padding: 20px 40px 20px 40px;
+    margin: 0 14% 0 2%;
+  }
+  #burguer img {
+    filter: brightness(10);
+  }
+  .logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  .logo img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+  nav {
+    display: none;
+  }
+  nav p {
+    color: white;
+    font-weight: 300;
+    padding: 0 0;
+  }
+  nav a {
+    border-bottom: solid transparent;
+    color: white;
+    text-decoration: none;
+  }
+  nav p:hover a {
+    border-bottom: solid white 1px;
+  }
+  nav p:hover {
+    cursor: pointer;
+  }
+  .underline {
+    border-bottom: solid 1px white;
+    transition-duration: 0.7s;
+  }
+  #menuEscondido {
+    z-index: 100;
+    position: fixed;
+    background-color: rgba(128, 0, 128, 0.55);
+    list-style-type: none;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    top: 16%;
+    left: 25%;
+    width: 500px;
+    font-weight: 600;
+    grid-template-columns: 1fr 1fr;
+    display: none;
+  }
+  #menuEscondido li {
+    padding: 8px 16px;
+    cursor: pointer;
+  }
+  #menuEscondido li:hover {
+    background-color: rgb(128, 0, 128);
+  }
+  /* Capa/Intro */
+  .capa {
+    width: 100%;
+    height: 400px;
+  }
+  .capa img {
+    width: 100%;
+    height: 100%;
+  }
+  .intro h1 {
+    font-size: 30px;
+  }
+  .intro p {
+    font-size: 20px;
+  }
+  /* Regras */
+  .regras ol {
+    grid-template-columns: 1fr;
+  }
+  .regras {
+    width: 100%;
+  }
+  .regras ol {
+    -moz-columns: 1;
+         columns: 1;
+    padding-left: 20%;
+    padding-bottom: 40px;
+  }
+  .regras li {
+    width: 300px;
+    padding-top: 30px;
+    width: 90%;
+  }
+  .regrasIntro {
+    left: 18%;
+    padding-top: 10%;
+    position: relative;
+    text-align: center;
+    width: 60%;
+  }
+  /* Tabela */
+  .tabela {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .introTabela {
+    width: 340px;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10%;
+  }
+  /* Axilio ao Dj */
+  .musicas {
+    display: flex;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .musicas {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    justify-content: center;
+  }
+  .audios {
+    row-gap: 10px;
+    grid-template-columns: 1fr;
+    margin-top: 0;
+    align-items: center;
+  }
+  .audios h4 {
+    padding-bottom: 20px;
+  }
+  #DJ h2 {
+    margin: 0 0;
+  }
+  .djImg {
+    max-width: 100%;
+  }
+  .djImg img {
+    border: none;
+    width: 100%;
+    height: 75%;
+    border-radius: 0px;
+  }
+  audio {
+    border-radius: 30px;
+    width: 450px;
+  }
+  iframe {
+    height: 300px;
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+  }
+  /* Falas */
+  .falas h3 {
+    text-align: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+  }
+  .falas ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 10%;
+    gap: 50px;
+    width: 96%;
+    text-align: center;
+  }
+  .falas li {
+    width: 100%;
+  }
+}
+/* Rodapé */
+.despedida p {
+  width: 98%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 447px) {
+  /* gerais */
+  li {
+    max-width: 400px;
+  }
+  /* cabeçalho */
+  #navMobile ul {
+    padding-left: 5px;
+  }
+  #navMobile ul > li {
+    font-size: 11px;
+  }
+  #navMobile li {
+    font-size: 15px;
+  }
+  #burguer {
+    padding: 10px 20px 10px 20px;
+    margin: 0 12% 0 12%;
+  }
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+  .logo img {
+    max-width: 55px;
+    max-height: 55px;
+  }
+  /* Capa/Intro */
+  .intro h1 {
+    font-size: 23px;
+  }
+  .intro p {
+    font-size: 16px;
+  }
+  .intro {
+    padding: 50px 1px 50px 1px;
+  }
+  .capa {
+    padding-top: 20%;
+    height: 250px;
+  }
+  /* Auxilio ao Dj */
+  audio {
+    max-width: 80%;
+  }
+  iframe {
+    height: 300px;
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+  }
+  /* Tabela */
+  td {
+    font-size: 62%;
+  }
+  th {
+    font-size: 90%;
+  }
+  .introTabela {
+    text-align: center;
+    padding-top: 20px;
+  }
+  .introTabela {
+    width: 281px;
+    padding-top: 5px;
+    padding-left: 7%;
+  }
+}/*# sourceMappingURL=style.css.map */
