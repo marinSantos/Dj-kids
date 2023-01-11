@@ -523,6 +523,32 @@ footer a {
 
 @media screen and (max-width: 912px) {
   /* Configurações gerais */
+  .inputs h4{
+  font-size: 15px;
+}
+#linkYoutube {
+  height: 45px;
+  width:150px ;
+  border: solid 2px #72128d;
+  border-right: none !important;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-size: 17px;
+  padding-left: 10px;
+}
+
+#enviar {
+  width: 60px;
+  height: 45px;
+  border: solid 2px #72128d;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   h2 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -754,6 +780,19 @@ footer a {
 
 @media screen and (min-width: 320px) and (max-width: 447px) {
   /* gerais */
+  .inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+  }
+  .inputs h4{
+    font-size: 17px;
+  }
+
   li {
     max-width: 400px;
   }
