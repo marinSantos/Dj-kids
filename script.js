@@ -1,5 +1,3 @@
-alert('! Atualizações ! \n\n-Novas ferramentas na sessão de músicas \n-Melhorias no desing')
-
 
 //Deixa a cor de fundo do header transparente
 window.onscroll = function () { transparent() }
