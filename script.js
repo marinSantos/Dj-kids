@@ -1,3 +1,5 @@
+alert('! Atualizações ! \n\n-Novas ferramentas na sessão de músicas \n-Melhorias no desing')
+
 
 //Deixa a cor de fundo do header transparente
 window.onscroll = function () { transparent() }
@@ -132,10 +134,10 @@ const original = document.getElementById('original')
 enviar.addEventListener('click',function(ev){
   ev.preventDefault()
 
- let pesquisa = link.value
+  
+  let pesquisa = link.value
   youtube.src = "https://www.youtube.com/embed/"+pesquisa
   link.value = ''
-})''
 })
 
 
