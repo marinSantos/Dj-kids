@@ -133,9 +133,10 @@ enviar.addEventListener('click',function(ev){
   ev.preventDefault()
 
   
-  let pesquisa = link.value
-  youtube.src = "https://www.youtube.com/embed/"+pesquisa
+   let pesquisa = link.value
+  youtube.src = pesquisa.replace("https://www.youtube.com/watch?v=","https://www.youtube.com/embed/")
   link.value = ''
+})''
 })
 
 
