@@ -132,9 +132,8 @@ const original = document.getElementById('original')
 enviar.addEventListener('click',function(ev){
   ev.preventDefault()
 
-  
-   let pesquisa = link.value
-  youtube.src = pesquisa.replace("https://www.youtube.com/watch?v=","https://www.youtube.com/embed/")
+ let pesquisa = link.value
+  youtube.src = "https://www.youtube.com/embed/"+pesquisa
   link.value = ''
 })''
 })
