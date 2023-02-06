@@ -1,4 +1,5 @@
 
+
 //Deixa a cor de fundo do header transparente
 window.onscroll = function () { transparent() }
 
@@ -137,22 +138,6 @@ enviar.addEventListener('click',function(ev){
   youtube.src = "https://www.youtube.com/embed/"+pesquisa
   link.value = ''
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
