@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 /* Configurações gerais */
 i {
   font-size: 20px;
@@ -20,7 +21,7 @@ i span {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 10px;
-       column-gap: 10px;
+  column-gap: 10px;
 }
 
 .divInputs {
@@ -81,9 +82,9 @@ i span {
 
 #enviar-animated {
   -webkit-animation: moveInBottom 5s ease-out;
-          animation: moveInBottom 5s ease-out;
+  animation: moveInBottom 5s ease-out;
   -webkit-animation-fill-mode: backwards;
-          animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 
@@ -93,11 +94,13 @@ i span {
     opacity: 0;
     transform: translateY(30px);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0px);
   }
 }
+
 .container {
   margin: 100px 0 0 0;
   width: 100%;
@@ -105,7 +108,7 @@ i span {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 
 #autoPause {
@@ -213,7 +216,7 @@ header {
   z-index: 100;
   display: flex;
   -moz-column-gap: 20%;
-       column-gap: 20%;
+  column-gap: 20%;
   align-items: center;
   font-family: "Open Sans", sans-serif;
   padding: 0 19% 0 10%;
@@ -245,7 +248,7 @@ header {
 nav {
   display: flex;
   -moz-column-gap: 35px;
-       column-gap: 35px;
+  column-gap: 35px;
 }
 
 nav p {
@@ -299,14 +302,18 @@ nav p:hover {
 
 /* Capa e introdução */
 .capa {
-  width: 100%;
+  width: 100% !important;
   height: 600px;
+  background-image: url(Imagens/engenheiro.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-attachment: fixed;
 }
 
-.capa img {
-  width: 100%;
-  height: 100%;
-}
+
 
 main {
   background-color: white;
@@ -522,54 +529,62 @@ footer a {
 }
 
 @media screen and (max-width: 912px) {
-  /* Configurações gerais */
-  .inputs h4{
-  font-size: 15px;
-}
-#linkYoutube {
-  height: 45px;
-  width:150px ;
-  border: solid 2px #72128d;
-  border-right: none !important;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  font-size: 17px;
-  padding-left: 10px;
-}
 
-#enviar {
-  width: 60px;
-  height: 45px;
-  border: solid 2px #72128d;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
-  text-align: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  /* Configurações gerais */
+  .inputs h4 {
+    font-size: 15px;
+  }
+
+  #linkYoutube {
+    height: 45px;
+    width: 150px;
+    border: solid 2px #72128d;
+    border-right: none !important;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+
+  #enviar {
+    width: 60px;
+    height: 45px;
+    border: solid 2px #72128d;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   h2 {
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
   #body.cinza #cinza {
     filter: grayscale(1);
   }
+
   #body.cinza .capa {
     filter: grayscale(1);
   }
+
   /* Cabeçalho */
   header {
     padding: 0;
     -moz-column-gap: 0;
-         column-gap: 0;
+    column-gap: 0;
   }
+
   #navMobile.active {
     width: 220px;
     overflow-y: scroll;
     left: 0px;
   }
+
   #navMobile {
     background-color: #72128d;
     position: relative;
@@ -582,13 +597,16 @@ footer a {
     overflow-y: hidden;
     transition: 0.7s;
   }
+
   #navMobile ul {
     padding-left: 15px;
   }
+
   #navMobile a {
     text-decoration: none;
     color: white;
   }
+
   #navMobile li {
     margin-bottom: 15px;
     padding-bottom: 5px;
@@ -597,6 +615,7 @@ footer a {
     color: white;
     border-bottom: solid white 1px;
   }
+
   #burguer {
     display: block;
     border: solid white 1px;
@@ -604,41 +623,51 @@ footer a {
     padding: 20px 40px 20px 40px;
     margin: 0 14% 0 2%;
   }
+
   #burguer img {
     filter: brightness(10);
   }
+
   .logo {
     height: 60px;
     width: 60px;
     border-radius: 50%;
   }
+
   .logo img {
     max-width: 60px;
     max-height: 60px;
   }
+
   nav {
     display: none;
   }
+
   nav p {
     color: white;
     font-weight: 300;
     padding: 0 0;
   }
+
   nav a {
     border-bottom: solid transparent;
     color: white;
     text-decoration: none;
   }
+
   nav p:hover a {
     border-bottom: solid white 1px;
   }
+
   nav p:hover {
     cursor: pointer;
   }
+
   .underline {
     border-bottom: solid 1px white;
     transition-duration: 0.7s;
   }
+
   #menuEscondido {
     z-index: 100;
     position: fixed;
@@ -653,46 +682,52 @@ footer a {
     grid-template-columns: 1fr 1fr;
     display: none;
   }
+
   #menuEscondido li {
     padding: 8px 16px;
     cursor: pointer;
   }
+
   #menuEscondido li:hover {
     background-color: rgb(128, 0, 128);
   }
+
   /* Capa/Intro */
   .capa {
     width: 100%;
-    height: 400px;
+    height: 600px;
   }
-  .capa img {
-    width: 100%;
-    height: 100%;
-  }
+
   .intro h1 {
     font-size: 30px;
   }
+
   .intro p {
     font-size: 20px;
   }
+
   /* Regras */
   .regras ol {
     grid-template-columns: 1fr;
   }
+
   .regras {
     width: 100%;
   }
+
   .regras ol {
     -moz-columns: 1;
-         columns: 1;
+    columns: 1;
     padding-left: 20%;
     padding-bottom: 40px;
   }
+
   .regras li {
     width: 300px;
     padding-top: 30px;
     width: 90%;
   }
+
   .regrasIntro {
     left: 18%;
     padding-top: 10%;
@@ -700,67 +735,80 @@ footer a {
     text-align: center;
     width: 60%;
   }
+
   /* Tabela */
   .tabela {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
   }
+
   .introTabela {
     width: 340px;
     text-align: center;
     padding-top: 20px;
     padding-left: 10%;
   }
+
   /* Axilio ao Dj */
   .musicas {
     display: flex;
     text-align: center;
     padding: 40px 0;
   }
+
   .musicas {
     display: flex;
     flex-direction: column;
     row-gap: 40px;
     justify-content: center;
   }
+
   .audios {
     row-gap: 10px;
     grid-template-columns: 1fr;
     margin-top: 0;
     align-items: center;
   }
+
   .audios h4 {
     padding-bottom: 20px;
   }
+
   #DJ h2 {
     margin: 0 0;
   }
+
   .djImg {
     max-width: 100%;
   }
+
   .djImg img {
     border: none;
     width: 100%;
     height: 75%;
     border-radius: 0px;
   }
+
   audio {
     border-radius: 30px;
     width: 450px;
   }
+
   iframe {
     height: 300px;
     width: 100%;
     border-radius: 0px;
     border: none;
   }
+
   /* Falas */
   .falas h3 {
     text-align: center;
     padding-bottom: 60px;
     padding-top: 60px;
   }
+
   .falas ul {
     display: grid;
     grid-template-columns: 1fr;
@@ -769,16 +817,19 @@ footer a {
     width: 96%;
     text-align: center;
   }
+
   .falas li {
     width: 100%;
   }
 }
+
 /* Rodapé */
 .despedida p {
   width: 98%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 447px) {
+
   /* gerais */
   .inputs {
     width: 100%;
@@ -787,76 +838,95 @@ footer a {
     justify-content: center;
     align-items: center;
     -moz-column-gap: 10px;
-         column-gap: 10px;
+    column-gap: 10px;
   }
-  .inputs h4{
+
+  .inputs h4 {
     font-size: 17px;
   }
 
   li {
     max-width: 400px;
   }
+
   /* cabeçalho */
   #navMobile ul {
     padding-left: 5px;
   }
-  #navMobile ul > li {
+
+  #navMobile ul>li {
     font-size: 11px;
   }
+
   #navMobile li {
     font-size: 15px;
   }
+
   #burguer {
     padding: 10px 20px 10px 20px;
     margin: 0 12% 0 12%;
   }
+
   .logo {
     width: 55px;
     height: 55px;
   }
+
   .logo img {
     max-width: 55px;
     max-height: 55px;
   }
+
   /* Capa/Intro */
   .intro h1 {
     font-size: 23px;
   }
+
   .intro p {
     font-size: 16px;
   }
+
   .intro {
     padding: 50px 1px 50px 1px;
   }
+
   .capa {
     padding-top: 20%;
-    height: 250px;
+    height: 350px;
   }
+
   /* Auxilio ao Dj */
   audio {
     max-width: 80%;
   }
+
   iframe {
     height: 300px;
     width: 100%;
     border-radius: 0px;
     border: none;
   }
+
   /* Tabela */
   td {
     font-size: 62%;
   }
+
   th {
     font-size: 90%;
   }
+
   .introTabela {
     text-align: center;
     padding-top: 20px;
   }
+
   .introTabela {
     width: 281px;
     padding-top: 5px;
     padding-left: 7%;
 
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
