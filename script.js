@@ -1,5 +1,5 @@
 
-
+alert('Atualização: \n\n-Para uma melhor praticidade realoquei as sessões de maior importância e usabilidade para o topo da página.\n\n-Melhorias no desing da tebela de pagamentos.')
 //Deixa a cor de fundo do header transparente
 window.onscroll = function () { transparent() }
 
@@ -138,6 +138,17 @@ enviar.addEventListener('click',function(ev){
   youtube.src = "https://www.youtube.com/embed/"+pesquisa
   link.value = ''
 })
+
+
+//Scroll automático
+
+const logo = document.getElementById('logo')
+
+logo.addEventListener('click',function(){
+  window.scroll(0,0)
+})
+
+
 
 
 
