@@ -1,5 +1,5 @@
 
-alert('Atualização: \n\n-Para uma melhor praticidade realoquei as sessões de maior importância e usabilidade para o topo da página.\n\n-Melhorias no desing da tebela de pagamentos.')
+alert('Atualização: \n\n-Sessões de maior importância e usabilidade para o topo da página.\n\n-Melhorias no desing da tebela de pagamentos.')
 //Deixa a cor de fundo do header transparente
 window.onscroll = function () { transparent() }
 
