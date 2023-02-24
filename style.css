@@ -6,7 +6,8 @@ i {
 }
 
 i span {
-  font-size: 50px;
+  font-size: 40px;
+  color: #800080;
 }
 
 .avisos {
@@ -39,8 +40,17 @@ i span {
   font-size: 17px;
   padding-left: 10px;
 }
+#linkYoutube2,#pesquisa {
+  height: 45px;
+  border: solid 2px #72128d;
+  border-right: none !important;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  font-size: 17px;
+  padding-left: 10px;
+}
 
-#enviar {
+#enviar, #enviar2, #enviar3 {
   width: 60px;
   height: 45px;
   border: solid 2px #72128d;
@@ -53,12 +63,12 @@ i span {
   align-items: center;
 }
 
-#enviar:active {
+#enviar:active, #enviar2:active, #enviar3:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-#enviar::after {
+#enviar::after, #enviar2::after, #enviar3::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -71,16 +81,16 @@ i span {
   transition: all 0.4s;
 }
 
-#enviar-white::after {
+#enviar-white::after, #enviar2-white::after, #enviar3-white::after {
   background-color: #fff;
 }
 
-#enviar:hover::after {
+#enviar:hover::after, #enviar2:hover::after, #enviar3:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
 
-#enviar-animated {
+#enviar-animated, #enviar2-animated, #enviar3-animated {
   -webkit-animation: moveInBottom 5s ease-out;
   animation: moveInBottom 5s ease-out;
   -webkit-animation-fill-mode: backwards;
@@ -446,8 +456,8 @@ audio {
 }
 
 iframe {
-  height: 300px;
-  width: 470px;
+  height: 400px;
+  width: 670px;
   border-radius: 20px;
   border: rgb(128, 0, 128) solid 3px;
 }
@@ -535,6 +545,16 @@ footer a {
   }
 
   #linkYoutube {
+    height: 45px;
+    width: 150px;
+    border: solid 2px #72128d;
+    border-right: none !important;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    font-size: 17px;
+    padding-left: 10px;
+  }
+  #linkYoutube2,#pesquisa {
     height: 45px;
     width: 150px;
     border: solid 2px #72128d;
