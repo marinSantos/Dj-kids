@@ -1,5 +1,4 @@
 
-alert('Atualização: \n\n-Agora quando o modo alternar estiver ativo, a invés das músicas pausarem, irão parar completamente.\n\n-Modo alternar pré-ativo como padrão.\n\n-Recurso sem ultilidade retirado da sessão de músicas "caso ache um equívoco, entrar em contato."\n\n-Nova ultilidade adicionada na sessão de músicas.')
 
 //Deixa a cor de fundo do header transparente
 window.onscroll = function () { transparent() }
