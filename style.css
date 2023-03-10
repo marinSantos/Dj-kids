@@ -430,7 +430,6 @@ th {
   border-top-right-radius: 20px;
   margin-top: 10px;
   border-bottom: none !important;
-  border: #800080 solid 2px;
 }
 
 .musica {
@@ -459,7 +458,6 @@ iframe {
   height: 400px;
   width: 670px;
   border-radius: 20px;
-  border: rgb(128, 0, 128) solid 3px;
 }
 
 .falas {
