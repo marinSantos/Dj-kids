@@ -182,13 +182,7 @@ enviar3.addEventListener('click', function (ev) {
 )
 
 
-//Scroll automático
 
-const logo = document.getElementById('logo')
-
-logo.addEventListener('click', function () {
-  window.scroll(0, 0)
-})
 
 
 
