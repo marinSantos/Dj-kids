@@ -458,6 +458,7 @@ iframe {
   height: 400px;
   width: 670px;
   border-radius: 20px;
+  border: solid 2px #72128d;
 }
 
 .falas {
