@@ -1,5 +1,4 @@
 
-
 //Deixa a cor de fundo do header transparente
 window.onscroll = function () { transparent() }
 
@@ -171,35 +170,12 @@ enviar2.addEventListener('click', function (ev) {
   link2.value = ''
 })
 let index = 0
-enviar3.addEventListener('click', function (ev) {
-  ev.preventDefault()
-  alert('Resposta enviada!')
-  index++
-
-  localStorage.setItem('resposta' + index, link3.value)
-  link3.value = ''
-}
-)
 
 
 
+let span = document.getElementById('span')
 
+let data  = new Date()
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+span.innerText = data.getFullYear()
 
