@@ -150,14 +150,7 @@ const enviar3 = document.getElementById('enviar3')
 const youtube = document.getElementById('youtube')
 const original = document.getElementById('original')
 
-enviar.addEventListener('click', function (ev) {
-  ev.preventDefault()
 
-
-  let pesquisa = link.value
-  youtube.src = "https://www.youtube.com/embed/" + pesquisa
-  link.value = ''
-})
 
 
 enviar2.addEventListener('click', function (ev) {
