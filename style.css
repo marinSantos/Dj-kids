@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 /* Configurações gerais */
-section.gradient{
+section.gradient {
   background-color: rgb(245, 245, 245);
 
 }
+
 i {
   font-size: 20px;
 }
@@ -27,7 +28,7 @@ i span {
   align-items: center;
   -moz-column-gap: 10px;
   column-gap: 10px;
-    padding: 40px 0 30px 0;
+  padding: 40px 0 30px 0;
 }
 
 .divInputs {
@@ -36,33 +37,18 @@ i span {
   align-items: center;
 }
 
-#linkYoutube {
-  height: 45px;
-  border: solid 2px #72128d;
-  border-right: none !important;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
-  font-size: 17px;
-  padding-left: 10px;
-}
 
 #linkYoutube2 {
   height: 45px;
-  border: solid 2px #72128d;
-  border-right: none !important;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
+  width: 390px;
   font-size: 17px;
   padding-left: 10px;
 }
 
-#enviar,
+
 #enviar2 {
   width: 60px;
   height: 45px;
-  border: solid 2px #72128d;
-  border-top-right-radius: 50px;
-  border-bottom-right-radius: 50px;
   text-align: center;
   cursor: pointer;
   display: flex;
@@ -70,13 +56,13 @@ i span {
   align-items: center;
 }
 
-#enviar:active,
+
 #enviar2:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
-#enviar::after,
+
 #enviar2::after {
   content: "";
   display: inline-block;
@@ -90,18 +76,18 @@ i span {
   transition: all 0.4s;
 }
 
-#enviar-white::after,
+
 #enviar2-white::after {
   background-color: #fff;
 }
 
-#enviar:hover::after,
+
 #enviar2:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
 }
 
-#enviar-animated,
+
 #enviar2-animated {
   -webkit-animation: moveInBottom 5s ease-out;
   animation: moveInBottom 5s ease-out;
@@ -393,7 +379,7 @@ h1 {
   width: 100%;
   align-items: center;
   justify-content: center;
-  
+
 }
 
 .introTabela {
@@ -546,7 +532,7 @@ footer a {
     padding-left: 10px;
   }
 
-  #linkYoutube2{
+  #linkYoutube2 {
     height: 45px;
     width: 250px;
     border: solid 2px #72128d;
@@ -912,7 +898,8 @@ footer a {
   audio {
     width: 260px;
   }
-  .musica img{
+
+  .musica img {
     width: 260px;
   }
 
@@ -949,7 +936,7 @@ footer a {
 
 
   }
- 
+
 }
 
 /*# sourceMappingURL=style.css.map */
