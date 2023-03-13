@@ -521,34 +521,19 @@ footer a {
     font-size: 15px;
   }
 
-  #linkYoutube {
-    height: 45px;
-    width: 250px;
-    border: solid 2px #72128d;
-    border-right: none !important;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    font-size: 17px;
-    padding-left: 10px;
-  }
+
 
   #linkYoutube2 {
     height: 45px;
     width: 250px;
-    border: solid 2px #72128d;
-    border-right: none !important;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+
     font-size: 17px;
     padding-left: 10px;
   }
 
-  #enviar {
+  #enviar2 {
     width: 60px;
     height: 45px;
-    border: solid 2px #72128d;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
     text-align: center;
     cursor: pointer;
     display: flex;
