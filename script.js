@@ -65,11 +65,11 @@ function a1ev() {
   a5.pause()
   a6.pause()
 
-  a2.myAudio.currentTime = 0
-  a3.myAudio.currentTime = 0
-  a4.myAudio.currentTime = 0
-  a5.myAudio.currentTime = 0
-  a6.myAudio.currentTime = 0
+  a2.currentTime = 0
+  a3.currentTime = 0
+  a4.currentTime = 0
+  a5.currentTime = 0
+  a6.currentTime = 0
 }
 function a2ev() {
   a1.pause()
